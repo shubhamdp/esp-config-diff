@@ -1,6 +1,11 @@
 # sdkconfig-differ
 sdkconfig differ for esp-idf config files
 
+## Install requirements
+```
+python3 -m pip install -r requirements.txt
+```
+
 ## How to use eg
 ```
 ./sdkconfig-differ.py --conf sdkconfig --old-conf sdkconfig.old
