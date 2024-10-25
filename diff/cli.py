@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-import json
 import click
 
 # ANSI color codes for styling
@@ -27,8 +26,8 @@ def make_config(sdkconfig):
     return config
 
 @click.command()
-@click.option('--conf', help='Current config file')
-@click.option('--old-conf', help='Older config file')
+@click.option('--conf', required=True, help='Current config file')
+@click.option('--old-conf', required=True, help='Older config file')
 @click.option('--no-color', is_flag=True, help='Disable colored output')
 def main(conf, old_conf, no_color):
     # Determine if colors should be used
