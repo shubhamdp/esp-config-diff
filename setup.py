@@ -2,6 +2,9 @@
 
 from setuptools import setup, find_packages
 
+with open('README.md') as f:
+    long_description = f.read()
+
 setup(
     name='esp_config_diff',
     version='0.1.0',
@@ -15,6 +18,8 @@ setup(
         ],
     },
     description='A tool for comparing esp idf sdkconfigs',
+    long_description=long_description,
+    long_description_content_type='text/markdown',
     author='shubhamdp',
     url='https://github.com/shubhamdp/esp-config-diff',
     classifiers=[
