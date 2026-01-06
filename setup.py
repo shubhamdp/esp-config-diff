@@ -8,7 +8,7 @@ with open('README.md') as f:
 setup(
     name='esp_config_diff',
     version='0.1.1',
-    packages=find_packages(),
+    packages=["diff"],
     install_requires=[
         'Click',
     ],
